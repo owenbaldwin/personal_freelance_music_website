@@ -19,6 +19,7 @@
   color: $greyed-out;
   padding: 16px;
   transition: 0.3s;
+  font-family: limelight;
 }
 
 .tabs li:hover {
@@ -34,4 +35,8 @@
 .tabs {
   display: flex;
   justify-content: center;
+}
+
+h2 {
+  font-family: 'Poiret One', cursive;
 }
