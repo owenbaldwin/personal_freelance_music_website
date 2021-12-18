@@ -1,0 +1,54 @@
+.footer {
+  background-image:
+   linear-gradient( rgba(0, 0, 0, 0.589),rgba(0, 0, 0, 0)),
+    url("artdecofooter.png");
+  background-size: contain;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialm{
+  text-align: center;
+  padding: 0px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+
+  a {
+    font-size: 25px;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+
+    background-image: linear-gradient(
+      to right,
+      #462523 0,
+      #cb9b51 22%,
+      #f6e27a 45%,
+      #f6f2c0 50%,
+      #f6e27a 55%,
+      #cb9b51 78%,
+      #462523 100%
+    );
+    -webkit-background-clip:text;
+    letter-spacing: 5px;
+  }
+  a:hover {
+    text-shadow:
+    0 0 1px #ece1b2,
+    0 0 7px #ceaa33,
+    0 0 10px #ccab3e,
+    0 0 21px #ccaf4e,
+    0 0 42px #c4ad63,
+    0 0 82px #c0ae74,
+    0 0 92px #c2b485,
+    0 0 102px #c0b590,
+    0 0 151px #bdb6a0;
+  }
+  li {
+    margin-top: 16px;
+    list-style-type: none;
+  }
+}
