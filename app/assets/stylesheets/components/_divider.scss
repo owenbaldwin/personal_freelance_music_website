@@ -1,0 +1,126 @@
+.title-deco-container {
+  /* 120 60 20 */
+  margin-top: 64px;
+  margin-bottom: 64px;
+  display: grid;
+  grid-template-columns:
+    [start]       1fr
+    [mid-start]   20px
+    [small-start] 10px
+    [main-start]  5px
+    [inner-start] 5px
+    [small-end]   20px
+    [mid-end]     80px
+    [mid-start]   20px
+    [small-start] 5px
+    [inner-end]   5px
+    [main-end]    10px
+    [small-end]   20px
+    [mid-end]     1fr
+    [end]
+  ;
+  grid-template-rows:
+    [main-start]    5px
+    [inner-start]   15px
+    [small-start]   20px
+    [mid-start small-end]     10px
+    [dot-start]     5px
+    [content-start] 30px
+    [content-end]   5px
+    [dot-end]       10px
+    [mid-end small-start]   20px
+    [small-end]     15px
+    [inner-end]     5px
+    [main-end]
+  ;
+}
+
+.title-deco-container .content {
+  grid-column: start / end;
+  grid-row: content-start / content-end;
+  z-index: 100;
+  border-top: 1px solid #E0C351;
+  border-bottom: 1px solid #E0C351;
+
+}
+
+.title-deco-container .content-dot {
+  grid-column: start / end;
+  grid-row: dot-start / dot-end;
+  border-top: 1px solid #E0C351;
+  border-bottom: 1px solid #E0C351;
+  // box-shadow:
+  //     0 0 1px #ece1b2,
+  //     0 0 2px #ceaa33,
+  //     0 0 4px #ccab3e,
+  //     0 0 7px #ccaf4e,
+  //     // 0 0 42px #c4ad63,
+  //     0 0 10px #c0ae74,
+  //     // 0 0 92px #c2b485,
+  //     // 0 0 102px #c0b590,
+  //     0 0 12px #bdb6a0;
+}
+
+.title-deco-container .main-diamond-outer {
+  grid-area: main;
+  transform: rotate(45deg);
+  z-index: 50;
+  border: 1px solid #E0C351;
+  background-color: #000;
+}
+
+.title-deco-container .main-diamond-inner {
+  grid-area: inner;
+  transform: rotate(45deg);
+  z-index: 60;
+  border: 1px solid #E0C351;
+}
+
+.title-deco-container .mid-diamond-left {
+  grid-column: mid-start 1 / mid-end 1;
+  grid-row: mid-start / mid-end;
+  transform: rotate(45deg);
+  z-index: 40;
+/*   z-index: 999; */
+  border: 1px solid #E0C351;
+  background-color: #000;
+}
+
+.title-deco-container .mid-diamond-right {
+  grid-column: mid-start 2 / mid-end 2;
+  grid-row: mid-start / mid-end;
+  transform: rotate(45deg);
+  z-index: 40;
+/*   z-index: 30; */
+  border: 1px solid #E0C351;
+  background-color: #000;
+}
+
+.title-deco-container .small-diamond-left-top {
+  grid-column: small-start 1 / small-end 1;
+  grid-row: small-start 1 / small-end 1;
+  transform: rotate(45deg);
+/*   z-index: 1000; */
+  border: 1px solid #E0C351;
+}
+
+.title-deco-container .small-diamond-left-bottom {
+  grid-column: small-start 1 / small-end 1;
+  grid-row: small-start 2 / small-end 2;
+  transform: rotate(45deg);
+  border: 1px solid #E0C351;
+}
+
+.title-deco-container .small-diamond-right-top {
+  grid-column: small-start 2 / small-end 2;
+  grid-row: small-start 1 / small-end 1;
+  transform: rotate(45deg);
+  border: 1px solid #E0C351;
+}
+
+.title-deco-container .small-diamond-right-bottom {
+  grid-column: small-start 2 / small-end 2;
+  grid-row: small-start 2 / small-end 2;
+  transform: rotate(45deg);
+  border: 1px solid #E0C351;
+}
