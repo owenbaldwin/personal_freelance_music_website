@@ -1,8 +1,129 @@
+.portfolio-background {
+  height: auto;
+  margin-bottom: 24px;
+}
+
+
 .references-banner {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0),rgrgba(0, 0, 0, 0),url("bg.png"));
+  // background-image:
+  //   linear-gradient(rgba(0, 0, 0, 0),rgrgba(0, 0, 0, 0),url("homepic.jpeg"));
   background-size: cover;
   background-position: center;
   height: 600px;
   width: 100%;
+  margin-bottom: 24px;
+}
+
+
+.diamond-deco-container {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns:
+    [outer-start]  5px
+    [mid-start]    5px
+    [inner-start]  3px
+    [gap-start]    1fr
+    [gap-end]      3px
+    [inner-end]    5px
+    [mid-end]      5px
+    [outer-end]
+  ;
+  grid-template-rows:
+    [outer-start]  5px
+    [mid-start]    5px
+    [inner-start]  3px
+    [gap-start]    1fr
+    [gap-end]      3px
+    [inner-end]    5px
+    [mid-end]      5px
+    [outer-end]
+  ;
+}
+
+.diamond-deco-container .diamond-deco-content {
+  grid-area: inner;
+  padding: 5px 10px;
+}
+
+.diamond-deco-container .diamond-deco-square-left-top {
+  grid-column: outer-start / inner-start;
+  grid-row: outer-start / inner-start;
+  transform: rotate(45deg);
+  border: 1px solid $bright-gold;
+}
+
+.diamond-deco-container .diamond-deco-square-left-bottom {
+  grid-column: outer-start / inner-start;
+  grid-row: inner-end / outer-end;
+  transform: rotate(45deg);
+  border: 1px solid $bright-gold;
+}
+
+.diamond-deco-container .diamond-deco-square-right-top {
+  grid-column: inner-end / outer-end;
+  grid-row: outer-start / inner-start;
+  transform: rotate(45deg);
+  border: 1px solid $bright-gold;
+}
+
+.diamond-deco-container .diamond-deco-square-right-bottom {
+  grid-column: inner-end / outer-end;
+  grid-row: inner-end / outer-end;
+  transform: rotate(45deg);
+  border: 1px solid $bright-gold;
+}
+
+.diamond-deco-container .diamond-deco-tall-outer {
+  grid-column: gap-start / gap-end;
+  grid-row: outer-start / outer-end;
+  border-top: 1px solid $bright-gold;
+  border-bottom: 1px solid $bright-gold;
+}
+
+.diamond-deco-container .diamond-deco-tall-inner {
+  grid-column: gap-start / gap-end;
+  grid-row: inner-start / inner-end;
+  border-top: 1px solid $bright-gold;
+  border-bottom: 1px solid $bright-gold;
+}
+
+.diamond-deco-container .diamond-deco-wide-outer {
+  grid-column: outer-start / outer-end;
+  grid-row: gap-start / gap-end;
+  border-left: 1px solid $bright-gold;
+  border-right: 1px solid $bright-gold;
+}
+
+.diamond-deco-container .diamond-deco-wide-inner {
+  grid-column: inner-start / inner-end;
+  grid-row: gap-start / gap-end;
+  border-left: 1px solid $bright-gold;
+  border-right: 1px solid $bright-gold;
+}
+
+.diamond-deco-content {
+  p {
+  color: white;
+  font-family: 'Poiret One';
+  font-size: 25px;
+  text-align: justify;
+  padding: 16px;
+  }
+  h3 {
+  font-size: 35px;
+  font-family: 'park lane';
+    color: transparent;
+    background-image: linear-gradient(
+      to right,
+      #795d33 0,
+      #cb9b51 22%,
+      #f6e27a 45%,
+      #f6f2c0 50%,
+      #f6e27a 55%,
+      #cb9b51 78%,
+      #795d33 100%
+    );
+    -webkit-background-clip:text;
+  text-align: center;
+  }
 }
