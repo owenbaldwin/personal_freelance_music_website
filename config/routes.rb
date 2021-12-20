@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get :about, to: 'pages#about'
   get :references, to: 'pages#references'
   get :contact, to: 'pages#contact'
+  get :dev, to: 'pages#dev'
   get :cv, to: 'pages#cv'
 end

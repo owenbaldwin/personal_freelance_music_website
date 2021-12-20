@@ -1,0 +1,70 @@
+.dev-title {
+  p {
+  color: white;
+  font-family: 'Poiret One';
+  font-size: 25px;
+  text-align: center;
+  padding: 16px;
+  }
+  h1 {
+  font-size: 35px;
+  font-family: 'park lane';
+    color: transparent;
+    background-image: linear-gradient(
+      to right,
+      #795d33 0,
+      #cb9b51 22%,
+      #f6e27a 45%,
+      #f6f2c0 50%,
+      #f6e27a 55%,
+      #cb9b51 78%,
+      #795d33 100%
+    );
+    -webkit-background-clip:text;
+  text-align: center;
+  }
+  a{
+  color: white;
+  font-family: 'Poiret One';
+  font-size: 20px;
+  text-align: justify;
+  padding: 16px;
+  }
+}
+
+
+.dev-item {
+  h2{
+  font-size: 30px;
+  font-family: 'park lane';
+    color: transparent;
+    background-image: linear-gradient(
+      to right,
+      #795d33 0,
+      #cb9b51 22%,
+      #f6e27a 45%,
+      #f6f2c0 50%,
+      #f6e27a 55%,
+      #cb9b51 78%,
+      #795d33 100%
+    );
+  -webkit-background-clip:text;
+  text-align: center;
+  margin-top: 48px;
+
+  }
+  p {
+  color: white;
+  font-family: 'Poiret One';
+  font-size: 20px;
+  text-align: justify;
+  padding: 16px;
+  }
+  a{
+  color: white;
+  font-family: 'Poiret One';
+  font-size: 20px;
+  text-align: justify;
+  padding: 16px;
+  }
+}
