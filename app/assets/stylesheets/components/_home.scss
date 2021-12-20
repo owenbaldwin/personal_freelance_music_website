@@ -30,45 +30,45 @@
 
 .square-deco-container .square-deco-inner {
   grid-area: mid;
-  border: 1px solid #E0C351;
+  border: 1px solid $bright-gold;
 }
 
 .square-deco-container .square-deco-square-left-top {
   grid-column: outer-start / inner-start;
   grid-row: outer-start / inner-start;
-  border: 1px solid #E0C351;
+  border: 1px solid $bright-gold;
 }
 
 .square-deco-container .square-deco-square-left-bottom {
   grid-column: outer-start / inner-start;
   grid-row: inner-end / outer-end;
-  border: 1px solid #E0C351;
+  border: 1px solid $bright-gold;
 }
 
 .square-deco-container .square-deco-square-right-top {
   grid-column: inner-end / outer-end;
   grid-row: outer-start / inner-start;
-  border: 1px solid #E0C351;
+  border: 1px solid $bright-gold;
 }
 
 .square-deco-container .square-deco-square-right-bottom {
   grid-column: inner-end / outer-end;
   grid-row: inner-end / outer-end;
-  border: 1px solid #E0C351;
+  border: 1px solid $bright-gold;
 }
 
 .square-deco-container .square-deco-tall {
   grid-column: gap-start / gap-end;
   grid-row: outer-start / outer-end;
-  border-top: 1px solid #E0C351;
-  border-bottom: 1px solid #E0C351;
+  border-top: 1px solid $bright-gold;
+  border-bottom: 1px solid $bright-gold;
 }
 
 .square-deco-container .square-deco-wide {
   grid-column: outer-start / outer-end;
   grid-row: gap-start / gap-end;
-  border-left: 1px solid #E0C351;
-  border-right: 1px solid #E0C351;
+  border-left: 1px solid $bright-gold;
+  border-right: 1px solid $bright-gold;
 }
 
 

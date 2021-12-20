@@ -23,7 +23,6 @@
 
 .portfolio-banner-image {
   object-fit: contain;
-  // height: 600px;
   width: 100%;
 }
 
@@ -85,7 +84,6 @@
     [mid-end]     5px
     [tall-end]
   ;
-/*   background-color: peachpuff; */
 }
 
 .triple-deco-container .triple-deco-content {
@@ -95,24 +93,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-/*   background-color: lightblue; */
-/*   color: #000; */
 }
 
 .triple-deco-container .triple-deco-tall {
   grid-area: tall;
-  border: 1px solid #E0C351;
-/*   background-color: plum; */
+  border: 1px solid $bright-gold;
 }
 
 .triple-deco-container .triple-deco-mid {
   grid-area: mid;
-  border: 1px solid #E0C351;
-/*   background-color: lightcoral; */
+  border: 1px solid $bright-gold;
 }
 
 .triple-deco-container .triple-deco-wide {
   grid-area: wide;
-  border: 1px solid #E0C351;
-/*   background-color: aquamarine; */
+  border: 1px solid $bright-gold;
 }
