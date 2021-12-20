@@ -1,17 +1,26 @@
-.portfolio-background {
-  height: auto;
-  margin-bottom: 24px;
-}
 
 
-.references-banner {
+.references-banner-image {
   // background-image:
   //   linear-gradient(rgba(0, 0, 0, 0),rgrgba(0, 0, 0, 0),url("homepic.jpeg"));
   background-size: cover;
   background-position: center;
   height: 600px;
   width: 100%;
-  margin-bottom: 24px;
+  z-index:-1;
+  position: relative;
+  // box-shadow: inset 0 0 10px greenyellow;
+}
+.references-banner{
+  // position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 600px;
+  // border: 60px solid black;
+  box-shadow: inset 0px 0px 30px 10px #000000;
+  box-sizing: border-box;
+
 }
 
 
