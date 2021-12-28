@@ -1,7 +1,7 @@
 {
   "name": "personal_freelance_music_website",
   "engines": {
-    "node": "14.15.5"
+    "node": "16.13.1"
   },
   "private": true,
   "dependencies": {
