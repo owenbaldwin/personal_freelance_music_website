@@ -1,3 +1,6 @@
+<% content_for :meta_title, "Web Development - Owen Baldwin" %>
+
+
 <div class="portfolio-background">
 
 
@@ -10,7 +13,6 @@
             <p>I also work as a full stack web developer. Here you will find my portfolio as well as links to my Github and projects!</p>
 
 
-            <%# FIX LINK!!! %>
             <main class="main">
               <div class="small-button">
                 <div class="small-button__ornament small-button__ornament--vertical">
@@ -22,7 +24,7 @@
                   <div class="small-button__ornament-top-bottom"></div>
                   <div class="small-button__ornament-left-right"></div>
                 </div>
-                <span class="button__label"><%= link_to "Github page", "https://github.com/owenbaldwin", :target => "_blank"%></span>
+                <span class="button__label"><%= link_to "Github page", "https://github.com/owenbaldwin", :target => "_blank", id: "dev-buttons" %></span>
               </div>
             </main>
 
@@ -81,7 +83,6 @@
                 And thanks to the task and submission management system, no more drowning in a sea of emails!
                 <br>This app is still in development with fellow Le Wagon graduates Zoe Bell, Emma Zurstrassen and Joe Waymark.</p>
 
-                <%# FIX LINK!!! %>
                 <main class="main">
                   <div class="small-button">
                     <div class="small-button__ornament small-button__ornament--vertical">
@@ -93,11 +94,12 @@
                       <div class="small-button__ornament-top-bottom"></div>
                       <div class="small-button__ornament-left-right"></div>
                     </div>
-                    <span class="button__label"><%= link_to "Visit Filmpod", "http://www.filmpod.net/", :target => "_blank"%></span>
+                    <span class="button__label"><%= link_to "Visit Filmpod", "http://www.filmpod.net/", :target => "_blank", id: "dev-buttons" %></span>
                   </div>
                 </main>
               </div>
             </div>
+
 
             <div class="dev-item">
               <h2>ISLEBNB</h2>
@@ -150,7 +152,7 @@
                       <div class="small-button__ornament-top-bottom"></div>
                       <div class="small-button__ornament-left-right"></div>
                     </div>
-                    <span class="button__label"><%= link_to "Visit IsleBnB", "https://airbnb-owenbaldwin.herokuapp.com/", :target => "_blank"%></span>
+                    <span class="button__label"><%= link_to "Visit IsleBnB", "https://airbnb-owenbaldwin.herokuapp.com/", :target => "_blank", id: "dev-buttons" %></span>
                   </div>
                 </main>
               </div>

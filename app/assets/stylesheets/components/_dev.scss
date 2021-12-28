@@ -5,6 +5,7 @@
   font-size: 25px;
   text-align: center;
   padding: 16px;
+
   }
   h1 {
   font-size: 35px;
@@ -67,4 +68,9 @@
   text-align: justify;
   padding: 16px;
   }
+}
+
+#dev-buttons {
+  z-index: 100;
+  position: relative;
 }

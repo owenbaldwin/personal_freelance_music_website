@@ -1,5 +1,5 @@
 meta_product_name: "Owen Baldwin"
 meta_title: "Film composer and songwriter"
 meta_description: "Owen Baldwin is a freelance film composer and songwriter"
-meta_image: "owen-baldwin-og.png.png" # should exist in `app/assets/images/`
+meta_image: "owen-baldwin-og.png" # should exist in `app/assets/images/`
 # twitter_account: "@product_twitter_account"   # required for Twitter Cards
