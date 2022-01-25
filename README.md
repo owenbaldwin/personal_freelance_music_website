@@ -1,1 +1,3 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+This is my website for my music services and promotion. It was built using Ruby on Rails.
+
+http://www.owenabaldwin.com/
