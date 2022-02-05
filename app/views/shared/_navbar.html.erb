@@ -5,17 +5,25 @@
       <%# <h2>Owen Baldwin</h2> %>
       <h2>OWEN BALDWIN</h2>
     </div>
-    <div class="tabs">
-      <ul>
-        <%# add link_to %>
-        <li><%= link_to "HOME", root_path %></li>
-        <li><%= link_to "PORTFOLIO", portfolio_path %></li>
-        <li><%= link_to "ABOUT", about_path %></li>
-        <li><%= link_to "REFERENCES", references_path %></li>
-        <li><%= link_to "CONTACT", contact_path %></li>
-        <li><%= link_to "WEB DEVELOPMENT", dev_path %></li>
-      </ul>
-    </div>
+    <%# <nav role="navigation"> %>
+      <div class="tabs">
+        <%# <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span> %>
+
+        <ul id="menu">
+          <%# add link_to %>
+          <li><%= link_to "HOME", root_path %></li>
+          <li><%= link_to "PORTFOLIO", portfolio_path %></li>
+          <li><%= link_to "ABOUT", about_path %></li>
+          <li><%= link_to "REFERENCES", references_path %></li>
+          <li><%= link_to "CONTACT", contact_path %></li>
+          <li><%= link_to "WEB DEVELOPMENT", dev_path %></li>
+        </ul>
+      </div>
+    <%# </nav> %>
   </div>
 
 
