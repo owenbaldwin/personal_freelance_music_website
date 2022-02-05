@@ -2,14 +2,41 @@
   height: 600px;
   display: flex;
   justify-content: center;
+  background: linear-gradient(#202124, #000000);
 }
 
 .contact-body {
   height: 600px;
   width: 75%;
   margin: 24px;
+
 }
 
 .form {
   margin: 16px;
+}
+
+
+@media only screen and (max-width: 576px) {
+  .contact-body {
+    margin: 0;
+    margin-top: 24px;
+  }
+
+  .contact-container {
+    transform: scale(1.35);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contact-body {
+    margin: 0;
+    margin-top: 64px;
+  }
+
+  .contact-container {
+    transform: scale(1.2);
+  }
+
+
 }
