@@ -11,26 +11,6 @@
   margin-top: 16px;
 }
 
-.tabs ul {
-  list-style: none;
-  margin: 0px;
-}
-
-.tabs li {
-  display: inline;
-  color: $greyed-out;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 4px;
-  transition: 0.5s;
-  font-family: 'park lane';
-  font-size: 20px;
-  letter-spacing: 4px;
-}
-
-.tabs li:hover {
-  color: black;
-}
 
 .name-title {
   display: flex;
@@ -45,65 +25,160 @@
   }
 }
 
-.tabs {
+@media only screen and (max-width: $phone) {
+  .name-title {
+    text-align: center;
+    h2 {
+      font-size: 20px;
+
+    }
+  }
+}
+
+.navbar {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  padding: 0;
+  background-color: transparent;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 
+.tabs {
+  margin: 0;
+  max-height: 0;
+  transition: max-height .2s ease-in-out;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0px;
+}
 
-a {
-  // text-decoration: none;
-  color: #D3C6A0;
+ul {
+  overflow: hidden;
+}
+
+li {
   transition: 0.5s;
-  text-shadow: 0px 0px 10px $bright-gold;
+  font-family: 'park lane';
+  font-size: 20px;
+  letter-spacing: 4px;
+  display: block;
+  text-align: center;
+  margin: 5px;
+  a {
+    text-decoration: none;
+    color: #D3C6A0;
+    transition: 0.5s;
+    text-shadow: 0px 0px 10px $bright-gold;
+  }
+  a:hover {
+    text-decoration: none;
+    color: white;
+    text-shadow:
+      0 0 1px #ece1b2,
+      0 0 7px #ceaa33,
+      0 0 10px #ccab3e,
+      0 0 21px #ccaf4e,
+      0 0 42px #c4ad63,
+      0 0 82px #c0ae74,
+      0 0 92px #c2b485,
+      0 0 102px #c0b590,
+      0 0 151px #bdb6a0;
 
+  }
 }
 
-a:hover {
-  text-decoration: none;
-  color: white;
-  text-shadow:
-    0 0 1px #ece1b2,
-    0 0 7px #ceaa33,
-    0 0 10px #ccab3e,
-    0 0 21px #ccaf4e,
-    0 0 42px #c4ad63,
-    0 0 82px #c0ae74,
-    0 0 92px #c2b485,
-    0 0 102px #c0b590,
-    0 0 151px #bdb6a0;
+.menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+  margin: 0;
 }
 
+.nav-icon {
+  background-image: linear-gradient(to right, #795d33 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #795d33 100%);
+  display: block;
+  height: 3px;
+  width: 40px;
+  position: relative;
+  transition: background .4s ease-out;
+  border-radius: 2px;
+}
 
-@media only screen and (max-width: 576px) {
-  .name-title {
-    text-align: center;
-  }
-  li a {
-    font-size: 12px;
-  }
+.nav-icon::before {
+  background-image: linear-gradient(to right, #795d33 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #795d33 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .4s ease-out;
+  top: 10px;
+  border-radius: 2px;
+}
 
-  #menu {
+.nav-icon::after {
+  background-image: linear-gradient(to right, #795d33 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #795d33 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .4s ease-out;
+  top: -10px;
+  border-radius: 2px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .tabs {
+  max-height: 340px;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon::before {
+  transform: rotate(-225deg);
+  top: 0;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon::after {
+  transform: rotate(225deg);
+  top: 0;
+}
+
+@media screen and (min-width: $laptop) {
+  ul {
+    overflow: visible;
+  }
+  .li {
+    display: inline;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0;
-
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .name-title {
     text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 4px;
   }
-  li a {
-    font-size: 20px;
-  }
-
-  #menu {
+  .tabs {
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0;
+    align-items: center;
+    text-align: center;
+    max-height: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .navbar {
+    height: 60px;
+    justify-content: center;
+
   }
 }
