@@ -10,8 +10,7 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  // height: 600px;
-  // border: 60px solid black;
+
   box-shadow: inset 0px 0px 30px 10px #000000;
   box-sizing: border-box;
 
@@ -38,7 +37,6 @@
 
 
 .portfolio-body {
-  // background-color: black;
   background: linear-gradient(#202124, #000000);
   display: flex;
   flex-direction: column;
@@ -62,12 +60,20 @@
   display: flex;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+  }
 }
 
 .spotify-players {
   width: 30%;
   padding: 5px;
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    margin-top: 16px;
+  }
 }
+
 
 .youtube-video {
   color: white;
@@ -75,8 +81,20 @@
   flex-direction: column;
   align-items: center;
   margin-top: 48px;
-  padding: 24px;
+  @media screen and (max-width: $phone) {
+    margin-top: 20px;
+  }
 }
+
+.yt-video-item {
+  width: 560px;
+  height: 315px;
+  @media screen and (max-width: $phone) {
+    width: 224px;
+    height: 126px;
+  }
+}
+
 
 .spotify-item {
   color: white;
@@ -85,6 +103,7 @@
   align-items: center;
   margin-top: 48px;
   padding: 24px;
+
 }
 
 
@@ -106,6 +125,7 @@
     [mid-end]     5px
     [tall-end]
   ;
+
 }
 
 .triple-deco-container .triple-deco-content {
@@ -115,6 +135,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .triple-deco-container .triple-deco-tall {
@@ -131,50 +152,3 @@
   grid-area: wide;
   border: 1px solid $bright-gold;
 }
-
-
-// @media only screen and (max-width: 576px) {
-//   .portfolio-body-inner {
-//     width: 95%;
-//     // CHANGE THIS WHEN ADDING NEW CONTENT!!!
-//     height: 4100px;
-//   }
-
-//   .square-deco-container {
-//     padding: 0;
-//   }
-
-//   .home-subs {
-//     text-align: center;
-//     h1 {
-//       letter-spacing: 8px !important;
-//     }
-//   }
-
-//   .triple-deco-container {
-//     transform: scale(0.55);
-//     transform-origin: top;
-//     justify-content: center;
-//   }
-
-// }
-
-// @media only screen and (max-width: 900px) {
-//   .portfolio-body-inner {
-//     width: 95%;
-
-//   }
-
-//   .square-deco-container {
-//     padding: 0;
-//   }
-
-//   .home-subs {
-//     text-align: center;
-//     h1 {
-//       letter-spacing: 8px !important;
-//     }
-//   }
-
-
-// }
