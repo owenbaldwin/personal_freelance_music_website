@@ -42,16 +42,16 @@
   grid-column: start / end;
   grid-row: content-start / content-end;
   z-index: 100;
-  border-top: 1px solid $bright-gold;
-  border-bottom: 1px solid $bright-gold;
+  border-top: 1px solid $button--color-1;
+  border-bottom: 1px solid $button--color-1;
 
 }
 
 .title-deco-container .content-dot {
   grid-column: start / end;
   grid-row: dot-start / dot-end;
-  border-top: 1px solid $bright-gold;
-  border-bottom: 1px solid $bright-gold;
+  border-top: 1px solid $button--color-1;
+  border-bottom: 1px solid $button--color-1;
   // box-shadow:
   //     0 0 1px #ece1b2,
   //     0 0 2px #ceaa33,
@@ -68,7 +68,7 @@
   grid-area: main;
   transform: rotate(45deg);
   z-index: 50;
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
   background-color: rgba(0, 0, 0, 0);
 
 }
@@ -77,7 +77,7 @@
   grid-area: inner;
   transform: rotate(45deg);
   z-index: 60;
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
 }
 
 .title-deco-container .mid-diamond-left {
@@ -86,7 +86,7 @@
   transform: rotate(45deg);
   z-index: 40;
 /*   z-index: 999; */
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -96,7 +96,7 @@
   transform: rotate(45deg);
   z-index: 40;
 /*   z-index: 30; */
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -105,26 +105,26 @@
   grid-row: small-start 1 / small-end 1;
   transform: rotate(45deg);
 /*   z-index: 1000; */
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
 }
 
 .title-deco-container .small-diamond-left-bottom {
   grid-column: small-start 1 / small-end 1;
   grid-row: small-start 2 / small-end 2;
   transform: rotate(45deg);
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
 }
 
 .title-deco-container .small-diamond-right-top {
   grid-column: small-start 2 / small-end 2;
   grid-row: small-start 1 / small-end 1;
   transform: rotate(45deg);
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
 }
 
 .title-deco-container .small-diamond-right-bottom {
   grid-column: small-start 2 / small-end 2;
   grid-row: small-start 2 / small-end 2;
   transform: rotate(45deg);
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
 }

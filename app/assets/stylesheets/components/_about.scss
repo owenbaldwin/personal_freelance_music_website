@@ -38,56 +38,56 @@
   grid-column: outer-start / inner-start;
   grid-row: outer-start / inner-start;
   transform: rotate(45deg);
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
 }
 
 .diamond-deco-container .diamond-deco-square-left-bottom {
   grid-column: outer-start / inner-start;
   grid-row: inner-end / outer-end;
   transform: rotate(45deg);
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
 }
 
 .diamond-deco-container .diamond-deco-square-right-top {
   grid-column: inner-end / outer-end;
   grid-row: outer-start / inner-start;
   transform: rotate(45deg);
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
 }
 
 .diamond-deco-container .diamond-deco-square-right-bottom {
   grid-column: inner-end / outer-end;
   grid-row: inner-end / outer-end;
   transform: rotate(45deg);
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
 }
 
 .diamond-deco-container .diamond-deco-tall-outer {
   grid-column: gap-start / gap-end;
   grid-row: outer-start / outer-end;
-  border-top: 1px solid $bright-gold;
-  border-bottom: 1px solid $bright-gold;
+  border-top: 1px solid $button--color-1;
+  border-bottom: 1px solid $button--color-1;
 }
 
 .diamond-deco-container .diamond-deco-tall-inner {
   grid-column: gap-start / gap-end;
   grid-row: inner-start / inner-end;
-  border-top: 1px solid $bright-gold;
-  border-bottom: 1px solid $bright-gold;
+  border-top: 1px solid $button--color-1;
+  border-bottom: 1px solid $button--color-1;
 }
 
 .diamond-deco-container .diamond-deco-wide-outer {
   grid-column: outer-start / outer-end;
   grid-row: gap-start / gap-end;
-  border-left: 1px solid $bright-gold;
-  border-right: 1px solid $bright-gold;
+  border-left: 1px solid $button--color-1;
+  border-right: 1px solid $button--color-1;
 }
 
 .diamond-deco-container .diamond-deco-wide-inner {
   grid-column: inner-start / inner-end;
   grid-row: gap-start / gap-end;
-  border-left: 1px solid $bright-gold;
-  border-right: 1px solid $bright-gold;
+  border-left: 1px solid $button--color-1;
+  border-right: 1px solid $button--color-1;
 }
 
 .about-box {
@@ -159,31 +159,31 @@
 .triple-diamond-deco-container .left-line {
   grid-column: line-start / small-end 1;
   grid-row: midline / large-end;
-  border-top: 1px solid $bright-gold;
+  border-top: 1px solid $button--color-1;
 }
 
 .triple-diamond-deco-container .right-line {
   grid-column: small-start 2 / line-end;
   grid-row: midline / large-end;
-  border-top: 1px solid $bright-gold;
+  border-top: 1px solid $button--color-1;
 }
 
 .triple-diamond-deco-container .small-diamond-left {
   grid-column: small-start 1 / small-end 1;
   grid-row: small-start / small-end;
   transform: rotate(45deg);
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
 }
 
 .triple-diamond-deco-container .small-diamond-right {
   grid-column: small-start 2 / small-end 2;
   grid-row: small-start / small-end;
   transform: rotate(45deg);
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
 }
 
 .triple-diamond-deco-container .large-diamond {
   grid-area: large;
   transform: rotate(45deg);
-  border: 1px solid $bright-gold;
+  border: 1px solid $button--color-1;
 }
